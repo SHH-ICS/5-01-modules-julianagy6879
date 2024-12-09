@@ -1,12 +1,14 @@
-# Create a program that accepts 2 numbers from the user. 
-# Your program will output a random number between the range given by the user.
-print("print a as a large number and b as a smaller number")
 
-a = float(input("a: "))
+from random import randint
 
-b = float(input("b: "))
+a= randint(0, 100)
+b=randint(1, 100)
 
-range = (a-b)
+for _ in range(10):
+    c = int(input(f"Enter your answer for {a} + {b}: "))
+    if c == a + b:
+        print("Correct!")
+        break
+else:
+    print("Correct Solutions!")
 
-print(range)
-, -]
