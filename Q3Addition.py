@@ -1,13 +1,16 @@
-# Create a program that will ask the user an addition question. 
-# The program will generate two random numbers between 1 and 100, and display them as an addition question with appropriate prompts.
-import random
-num = random.randint(0,100)
-print(num)
-num = random.randint(0,100)
-print(num)
-print('what is the sum of')
-input()
-if num + num: 
-    print('Correct!') 
-else:
-    print('incorrect')
+import pygame
+
+from pygame import Color, Rect
+from pygame import draw
+from pygame import display
+
+SCREEN_SIZE = (500, 500)
+
+# initialize pygame modules
+pygame.init()
+
+# get a surface for graphics display
+gameDisplay = display.set_mode(SCREEN_SIZE)
+
+# background - color of the sky
+gameDisplay.fill(Color('lightblue'))
