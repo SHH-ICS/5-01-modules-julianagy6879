@@ -1,19 +1,4 @@
-import math
-
-a = float(input("Enter a: "))
-b = float(input("Enter b: "))
-
-def calc(a, b):
-    return math.sqrt(a**2 + b**2)
-
-hypotenuse = calc(a, b)
-print("Hypotenuse=",hypotenuse)
-
-
-import random
-
-a = float(input("Enter a: "))
-b = float(input("Enter b: "))
-
-random_number = random.uniform(a, b)
-print("Random number between", a, "and", b, "is:", random_number)
+a = float(input("Enter the length of the first leg (a): "))
+b = float(input("Enter the length of the second leg (b): "))
+c = (a**2 + b**2)**0.5
+print("The length of the hypotenuse (c) is:", c)
