@@ -1,16 +1,12 @@
-import pygame
+```python
+import random
 
-from pygame import Color, Rect
-from pygame import draw
-from pygame import display
-
-SCREEN_SIZE = (500, 500)
-
-# initialize pygame modules
-pygame.init()
-
-# get a surface for graphics display
-gameDisplay = display.set_mode(SCREEN_SIZE)
-
-# background - color of the sky
-gameDisplay.fill(Color('lightblue'))
+num1 = random.randint(1, 100)
+num2 = random.randint(1, 100)
+print("What is", num1, "+", num2, "?")
+user_answer = int(input("Your answer: "))
+if user_answer == num1 + num2:
+    print("Correct!")
+else:
+    print("Incorrect. The answer is", num1 + num2)
+```
