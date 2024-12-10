@@ -1,14 +1,11 @@
-
 from random import randint
 
-a= randint(0, 100)
-b=randint(1, 100)
+start = int(input("Enter the starting number: "))
+end = int(input("Enter the ending number: "))
 
-for _ in range(10):
-    c = int(input(f"Enter your answer for {a} + {b}: "))
-    if c == a + b:
-        print("Correct!")
-        break
+if start <= end:
+    print("Random number:", randint(start, end))
 else:
-    print("Correct Solutions!")
+    print("Invalid range.")
+
 
